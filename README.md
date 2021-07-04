@@ -34,3 +34,14 @@ run `npm start` on the terminal of the client directory.
 This should allow you to run the project on the browser now.
 
 Raise an issue, if these steps doesn't work on your computer.
+
+## Bugs
+There's a few warnings on the frontend, such as a useEffect dependency warning and a few unused imports here and there.
+As these are minor issues, I left them as it is for now, due to time constraint, but will resolve them as soon as possible.
+Other than that, there's a error which occurs on startup of the react app, which I need some resesarch on. As it also doesn't crash or effect the app, I left it for later as well, after the hackathon. This could be due to some dependency. Upon installation, react issues a warning about a high risk issue, which I haven't paid much heed to, although I am aware it wouldn't be wise to ignore it entirely. Other than that, the app works fine on the surface, but upon testing, I am sure there will be plenty to take care of. 
+
+## Future plans
+I do plan on working on this project further to transform this into something production ready. Profile page, and comment sections are the first features I would focus on implementing. Then I would try to complete it with settings and sorting options, and might progressively add new features afterwards.
+
+
+
