@@ -22,7 +22,6 @@ Create a .env file on the server folder, and set the following
 PASSWORD=<your password>
 jwtSecret=<a string for your jwt. sort of like a password>
 database=<Name of the postgres database you are useing>
-
 ```
 
 This should allow your nodejs application to use your postgres database.
