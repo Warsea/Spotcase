@@ -10,6 +10,7 @@ Video presentation - https://drive.google.com/file/d/1VM9pcaSzxQhsKtIT1tfK8Ww8iD
 
 Project description - https://drive.google.com/file/d/1eYdC1Z2BcG70igI6OIXQLr1zdDr94n9h/view?usp=sharing
 
+Note: The video quality may have been significantly reduced while processing by google drive. Email me for a better quality of the same video. Also let me know if the video or the description file if inaccessible or if it doesn't load.
 
 ## Details
 This is a platform wher people can easily submit their projects and share it with others, regardless of the field of interest. See the description file in the link above for more details.
