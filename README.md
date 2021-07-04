@@ -4,9 +4,11 @@
 
 Prerequisites - Nodejs and postresql must be installed in the system in order to be able to run this project.
 
-Link to video presentation - 
+Link to project folder - https://drive.google.com/drive/folders/1V5BJieeszn3rUPhLUZ_2igOfnVwmehVe?usp=sharing
 
 Link to description file - 
+
+
 
 ## Run the project 
 
@@ -36,6 +38,15 @@ Run `npm start` on the terminal of the client directory.
 This should allow you to run the project on the browser now.
 
 Raise an issue, if these steps doesn't work on your computer.
+
+
+## Breakdown
+This project was built with Reactjs on the frontend connected to the server through a REST API build using Nodejs with the Expressjs, and Postgresql as the database. A fairly secure authentication system has been implemented, which uses jwt to verify the user. The server hashes the password before inserting it into the database. 
+
+With the help of the React Context API, the global state can be imported to any components in the components tree with ease. A library called react-bootstrap is used to create the UI so that it looks neat and standard. Users can create posts, see other’s posts and vote for it if they’d like to. In order to fetch data from the server, a library called Axios has been used, which makes getting and posting requests easy. The application will automatically fetch new posts from the server once the user approaches the end of the page.
+
+On the backend, multer has been set up to handle the image uploaded by the user, and pg has been used to connect Nodejs to the database, and save and get whatever data is necessary. The usual required libraries like cors and dotenv have also been used.
+
 
 ## Bugs
 There are a few warnings on the frontend, such as a useEffect dependency warning and a few unused imports here and there.
