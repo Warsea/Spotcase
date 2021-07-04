@@ -1,4 +1,4 @@
--- This is the file I used to write sql commands before executing them. The commented commands are ones that I ran to experiment, but didn't need for the application, in the end.
+-- This is the file I used to write sql commands before executing them. 
 CREATE DATABASE postinger;
 
 CREATE TABLE users(
@@ -30,22 +30,11 @@ CREATE TABLE votes (
     REFERENCES users(user_id)
 );
 
--- CREATE TABLE votes(
---     vote_id SERIAL PRIMARY KEY,
---     post_id INT NOT NULL,
---     voter INT
---     );
 
-
---  DROP TABLE posts CASCADE;
-
--- SELECT * FROM posts ORDER BY post_id DESC LIMIT 5
-
--- SELECT post_id, caption, image_name, users.user_name FROM posts INNER JOIN users ON posts.posted_by = users.user_id;
 
 SELECT post_id, caption, image_name, users.user_name FROM posts INNER JOIN users ON posts.posted_by = users.user_id ORDER BY post_id DESC OFFSET 1 LIMIT 2;
 
--- SELECT EXISTS(SELECT user_id FROM users WHERE user_id = 143);
+
 
 SELECT voter FROM votes WHERE post_id = 2;
 
