@@ -3,6 +3,7 @@ import React, { Fragment, useContext, useState, useEffect } from 'react';
 import UserContext from '../context/UserContext';
 import Button from 'react-bootstrap/Button';
 import Post from './Post';
+import InfiniteScroll from 'react-infinite-scroll-component';
 
 const Dashboard = () => {
   const { setIsAuthenticated } = useContext(UserContext);
@@ -24,7 +25,7 @@ const Dashboard = () => {
     }
   }
 
-  async function getPosts() {
+  const getPosts = async () => {
     try {
       const res = await axios.get(
         `http://localhost:5000/newsfeed/posts/${pageNumber}`,
@@ -37,7 +38,7 @@ const Dashboard = () => {
       if (res.data.length === 0) {
       } else {
         let copy = [...posts];
-        let newPosts = copy.concat(res.data);
+        let newPosts = [...new Set(copy.concat(res.data))];
         console.log(res.data);
         setPosts(newPosts);
         console.log(posts);
@@ -45,17 +46,11 @@ const Dashboard = () => {
     } catch (error) {
       console.log(error);
     }
-  }
+  };
 
   function nextPage() {
     setPageNumber((prevPage) => prevPage + 1);
   }
-
-  // const logout = (e) => {
-  //   e.preventDefault();
-  //   localStorage.removeItem('token');
-  //   setIsAuthenticated(false);
-  // };
 
   useEffect(() => {
     getName();
@@ -65,12 +60,15 @@ const Dashboard = () => {
   }, [pageNumber]);
   return (
     <div className="mt-2">
-      {posts.length === 0 ? (
-        <h3>No posts yet</h3>
-      ) : (
-        posts.map((post, index) => <Post key={post.post_id} postData={post} />)
-      )}
-      <Button onClick={nextPage}>Next page {pageNumber + 1}</Button>
+      <InfiniteScroll dataLength={posts.length} next={nextPage} hasMore={true}>
+        {posts.length === 0 ? (
+          <h3>No posts yet</h3>
+        ) : (
+          posts.map((post, index) => (
+            <Post key={post.post_id} postData={post} />
+          ))
+        )}
+      </InfiniteScroll>
     </div>
   );
 };

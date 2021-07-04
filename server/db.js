@@ -4,11 +4,11 @@ require('dotenv').config();
 // password: 'wasiflight15243',
 
 const pool = new Pool({
-  user: 'postgres',
+  user: process.env.user,
   password: process.env.PASSWORD,
   host: 'localhost',
   port: 5432,
-  database: 'postinger',
+  database: process.env.database,
 });
 
 module.exports = pool;
