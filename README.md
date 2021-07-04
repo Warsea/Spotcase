@@ -4,9 +4,11 @@
 
 Prerequisites - Nodejs and postresql must be installed in the system in order to be able to run this project.
 
-Link to project folder - https://drive.google.com/drive/folders/1V5BJieeszn3rUPhLUZ_2igOfnVwmehVe?usp=sharing
+Project folder - https://drive.google.com/drive/folders/1V5BJieeszn3rUPhLUZ_2igOfnVwmehVe?usp=sharing
 
-Link to description file - 
+
+## Details
+This is a platform wher people can easily submit their projects and share it with others, regardless of the field of interest. See the description file in the link above for more details.
 
 
 
@@ -37,7 +39,7 @@ Run `npm start` on the terminal of the client directory.
 
 This should allow you to run the project on the browser now.
 
-Raise an issue, if these steps doesn't work on your computer.
+Email me in case you have issues running the project in your computer.
 
 
 ## Breakdown
