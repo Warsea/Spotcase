@@ -1,0 +1,1 @@
+the images folder in the public directory is for keeping all the uploaded image files.

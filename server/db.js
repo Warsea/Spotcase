@@ -4,7 +4,7 @@ require('dotenv').config();
 // password: 'wasiflight15243',
 
 const pool = new Pool({
-  user: process.env.user,
+  user: 'postgres',
   password: process.env.PASSWORD,
   host: 'localhost',
   port: 5432,
