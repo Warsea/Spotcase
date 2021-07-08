@@ -1,6 +1,6 @@
 # Spotcase
 
-###Codebreakers-Web-Tech-Hackathon-Project
+### Codebreakers-Web-Tech-Hackathon-Project
 
 Prerequisites - Nodejs and postresql must be installed in the system in order to be able to run this project.
 
