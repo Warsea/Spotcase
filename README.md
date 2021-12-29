@@ -2,7 +2,7 @@
 
 ### Codebreakers-Web-Tech-Hackathon-Project
 
-Prerequisites - Nodejs and postresql must be installed in the system in order to be able to run this project.
+
 
 Project folder - https://drive.google.com/drive/folders/1V5BJieeszn3rUPhLUZ_2igOfnVwmehVe?usp=sharing
 
@@ -18,6 +18,8 @@ This is a platform where people can easily submit their projects and share it wi
 
 
 ## Run the project 
+
+Prerequisites - Nodejs and postresql must be installed in the system in order to be able to run this project.
 
 In order to run the project first you need to clone the project in an empty directory, and open 2 terminal in that directory.
 The run `cd server` and `cd client` on each terminal to change to the respective directory, and run the following command on both: 
