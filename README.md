@@ -1,9 +1,5 @@
 # Spotcase
 
-### Codebreakers-Web-Tech-Hackathon-Project
-
-
-
 Project folder - https://drive.google.com/drive/folders/1V5BJieeszn3rUPhLUZ_2igOfnVwmehVe?usp=sharing
 
 Video presentation - https://drive.google.com/file/d/1VM9pcaSzxQhsKtIT1tfK8Ww8iDS8J2CD/view?usp=sharing
@@ -60,7 +56,7 @@ On the backend, multer has been set up to handle the image uploaded by the user,
 ## Bugs
 There are a few warnings on the frontend, such as a useEffect dependency warning and a few unused imports here and there.
 As these are minor fixes, I left them as it is for now, due to time constraint, but will resolve them as soon as possible.
-Other than that, there's a error which occurs on startup of the react app, which I need some resesarch on, but it could be due to some issue in one of the dependencies. But as it also doesn't crash or effect the app, I left it for after the hackathon as well. Upon installation, react issues a warning about a high risk issue, which I haven't paid much heed to, although I am aware it wouldn't be wise to ignore it entirely. Other than that, the app works fine on the surface, but upon testing, I am sure there will be plenty to take care of. 
+Other than that, there's a error which occurs on startup of the react app, which I need some resesarch on, but it could be due to some issue in one of the dependencies. Upon installation, react issues a warning about a high risk issue, which I haven't paid much heed to, although I am aware it wouldn't be wise to ignore it entirely. Other than that, the app works fine on the surface, but upon testing, I am sure there will be plenty to take care of. 
 
 ## Future plans
 I do plan on working on this project further to transform this into something production ready. Profile page, and comment sections are the first on my priority list of things that I would try implementing. Then I would try to make it complete with settings and sorting options, and might progressively add new features afterwards, like groups and followers.
